@@ -29,6 +29,7 @@ Fighter.prototype.fight = function (obj) {
 		if(obj.hitpoints <= 0) {
 			this.attack += 1;
 		}
+		return;
 	} else {
 		if (obj.def) {
 			obj.def = false;
