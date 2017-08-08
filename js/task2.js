@@ -26,6 +26,9 @@ Fighter.prototype.setAttack = function (attack) {
 Fighter.prototype.fight = function (obj) {
 	if (this instanceof Champion) {
 		obj.hitpoints -= this.attack;
+		if(obj.hitpoints <= 0) {
+			this.attack += 1;
+		}
 	} else {
 		if (obj.def) {
 			obj.def = false;
