@@ -85,3 +85,7 @@ Monster.prototype.enrage = function () {
 	this.rage = true;
 	
 }
+//module.exports = {
+//  Champion: Champion,
+//  Monster: Monster
+//}
